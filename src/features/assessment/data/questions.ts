@@ -11,15 +11,15 @@ export type Question = {
 
 export const backgroundQuestions = [
   {
-    question: "Job title",
+    question: "sector",
     type: "select",
-    answers: ["Software Engineer", "Product Manager", "Other"],
+    answers: ["Primary(Raw Materials)", "Tertiary (Services)", "Secondary(Manufacturing)","Human Services and Desicion Making "],
     section: "background",
     category: "background",
   },
   {
     type: "select",
-    question: "Which best describes you?",
+    question: "Describe your business in one sentence",
     answers: ["Business consultant"],
     section: "background",
     category: "background",
@@ -32,9 +32,9 @@ export const backgroundQuestions = [
     category: "background",
   },
   {
-    question: "What's your company's annual revenue?",
+    question: "What's your company located ?",
     type: "radio",
-    answers: ["0", "$100"],
+    answers: ["Nairobi", "Nakuru", "Mombasa","Other" ],
     section: "background",
     category: "background",
   },

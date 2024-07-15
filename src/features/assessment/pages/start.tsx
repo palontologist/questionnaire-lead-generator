@@ -43,7 +43,7 @@ export const registerStartPage = pageFactory(
                   </div>
                   <div class="w-full">
                     <label class="label" for="lastname">
-                      First
+                      Last
                     </label>
                     <input
                       type="text"

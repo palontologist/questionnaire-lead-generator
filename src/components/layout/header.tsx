@@ -4,7 +4,7 @@ export function Header() {
       <div className="container mx-auto">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl" href="/">
-            Podcast Assessment
+            Impact Assessment
           </a>
         </div>
         <div className="flex-none">

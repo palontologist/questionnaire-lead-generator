@@ -8,12 +8,12 @@ export const registerLandingPage = pageFactory(
         <section class="py-12">
           <div class="container mx-auto max-w-2xl text-center">
             <h1 class="text-4xl font-semibold text-gray-200">
-              A <span class="text-neutral-content">good</span> Podcast deserves
+              A <span class="text-neutral-content">good</span> business deserves
               to be
-              <span class="text-base-content"> great</span>
+              <span class="text-base-content"> sustainable and impactful</span>
             </h1>
             <p class="mt-4 text-xl text-gray-400">
-              Our survey analyzes various aspects of your podcast to pinpoint
+              Our survey analyzes various aspects of your business's sustainability perfomance  to pinpoint
               areas for improvement. You'll receive a detailed PDF report with
               personalized insights and recommendations.
             </p>
@@ -28,8 +28,8 @@ export const registerLandingPage = pageFactory(
                   Identify Weaknesses
                 </h3>
                 <p class="mt-2 text-neutral-content">
-                  Understand where your podcast is falling short and how to
-                  address it.
+                  Understand your company's environmental and social impact.
+                  Identify gaps in your sustainability practices.
                 </p>
               </div>
               <div class="rounded-lg border border-neutral-content p-6 shadow-lg">
@@ -37,8 +37,8 @@ export const registerLandingPage = pageFactory(
                   Customized Insights
                 </h3>
                 <p class="mt-2 text-neutral-content">
-                  Receive a tailored report specific to your podcast's unique
-                  needs.
+                  Receive a tailored report specific to your company's industry and size.
+                  Compare your perfomance against sustainability benchmarks and best practice.
                 </p>
               </div>
               <div class="rounded-lg border border-neutral-content p-6 shadow-lg">
@@ -46,8 +46,9 @@ export const registerLandingPage = pageFactory(
                   Actionable Recommendations
                 </h3>
                 <p class="mt-2 text-neutral-content">
-                  Get practical tips and strategies to enhance your podcast's
-                  performance.
+                  Get practical tips and strategies to enhance your company's
+                  sustainability efforts.
+                  Align your business with relevant Sustainable Development Goals.
                 </p>
               </div>
             </div>
@@ -57,10 +58,10 @@ export const registerLandingPage = pageFactory(
         <section class="py-12">
           <div class="container mx-auto space-y-4 text-center">
             <h2 class="text-2xl font-semibold">
-              Ready to Improve Your Podcast?
+              Ready to Improve Your Impact?
             </h2>
             <p class="mt-4">
-              Take our survey today and start your journey towards podcasting
+              Take our survey today and start your journey towards Sustainability
               excellence.
             </p>
             <a href="/assessment/start" class="btn btn-primary">
@@ -72,6 +73,6 @@ export const registerLandingPage = pageFactory(
     );
   },
   {
-    title: "Podcast Performance Survey",
+    title: "Impact Performance Survey",
   },
 );
