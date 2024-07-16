@@ -58,19 +58,19 @@ export const backgroundQuestions = [
 
 export const assessmentQuestions = [
   {
-    question: "How long have you been in your current role?",
+    question: "How confident are you that your company is managing it's environmental impact?",
     section: "assessment",
     category: "environmental",
   },
   {
-    question: "How long have you been in your current role?",
+    question: "How commited is your company to creating a positive social impact?",
     section: "assessment",
     category: "social",
   },
   {
-    question: "How long have you been in your current role?",
+    question: "To what extent do you believe your company has positive impact on society based on your posicy and internal governance",
     section: "assessment",
-    category: "sales",
+    category: "governance",
   },
 ] as Question[];
 
