@@ -1,4 +1,4 @@
-export type Categories = "leadership" | "marketing" | "sales";
+export type Categories = "environmental" | "social" | "governance";
 
 export type Question = {
   id: string;
@@ -60,12 +60,12 @@ export const assessmentQuestions = [
   {
     question: "How long have you been in your current role?",
     section: "assessment",
-    category: "leadership",
+    category: "environmental",
   },
   {
     question: "How long have you been in your current role?",
     section: "assessment",
-    category: "marketing",
+    category: "social",
   },
   {
     question: "How long have you been in your current role?",

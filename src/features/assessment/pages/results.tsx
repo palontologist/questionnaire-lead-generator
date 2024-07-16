@@ -52,7 +52,7 @@ function Category({
 
       <p>
         These questions will help us understand your background and the context
-        of your podcast. This will help us provide more accurate
+        of your business. This will help us provide more accurate
         recommendations.
       </p>
     </div>
@@ -83,21 +83,21 @@ export const registerResultsPage = pageFactory(
 
           <p>
             These questions will help us understand your background and the
-            context of your podcast. This will help us provide more accurate
+            context of your business. This will help us provide more accurate
             recommendations.
           </p>
 
           <Category
-            category="leadership"
-            score={categoryScores["leadership"]}
+            category="environmental"
+            score={categoryScores["environmental"]}
           />
-          <Category category="marketing" score={categoryScores["marketing"]} />
-          <Category category="sales" score={categoryScores["sales"]} />
+          <Category category="social" score={categoryScores["social"]} />
+          <Category category="governance" score={categoryScores["governance"]} />
         </div>
       </div>
     );
   },
   {
-    title: "Results | Podcast Assessment",
+    title: "Results | Impact Assessment",
   },
 );
