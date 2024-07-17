@@ -130,6 +130,6 @@ export const registerQuestionPage = pageFactory(
     );
   },
   {
-    title: "Podcast Assessment - Questions",
+    title: "Impact Assessment - Questions",
   },
 );

@@ -33,6 +33,6 @@ export const registerFinishAssessmentPage = pageFactory(
     );
   },
   {
-    title: "Finished | Podcast Assessment",
+    title: "Finished | Impact Assessment",
   },
 );
