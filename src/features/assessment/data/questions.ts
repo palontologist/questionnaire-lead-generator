@@ -4,7 +4,7 @@ export type Question = {
   id: string;
   question: string;
   answers: string[];
-  type: "select" | "radio";
+  type: "select" | "radio" | "input";
   section: "background" | "assessment";
   category: "background" | Categories;
 };
@@ -18,9 +18,9 @@ export const backgroundQuestions = [
     category: "background",
   },
   {
-    type: "select",
+    type: "input",
     question: "Describe your business in one sentence",
-    answers: ["Business consultant"],
+    answers: [""],
     section: "background",
     category: "background",
   },
