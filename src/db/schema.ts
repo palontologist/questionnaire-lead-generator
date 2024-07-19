@@ -26,3 +26,16 @@ export type SelectUser = typeof usersTable.$inferSelect;
 
 export type InsertPost = typeof responsesTable.$inferInsert;
 export type SelectPost = typeof responsesTable.$inferSelect;
+
+export const userTable = sqliteTable("user", {
+	id: text("id").notNull().primaryKey()
+});
+
+export const sessionTable = sqliteTable("session", {
+	id: text("id").notNull().primaryKey(),
+	userId: text("user_id")
+		.notNull()
+		.references(() => userTable.id),
+	expiresAt: integer("expires_at").notNull()
+});
+

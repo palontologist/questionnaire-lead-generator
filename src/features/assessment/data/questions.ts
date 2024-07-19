@@ -7,6 +7,7 @@ export type Question = {
   type: "select" | "radio" | "input";
   section: "background" | "assessment";
   category: "background" | Categories;
+  label?:string;
 };
 
 export const backgroundQuestions = [
@@ -21,8 +22,10 @@ export const backgroundQuestions = [
     type: "input",
     question: "Describe your business in one sentence",
     answers: [""],
+    label:"Business consultant",
     section: "background",
     category: "background",
+
   },
   {
     question: "Which best describes the area you work in or you business?",

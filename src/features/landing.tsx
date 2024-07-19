@@ -67,6 +67,11 @@ export const registerLandingPage = pageFactory(
             <a href="/assessment/start" class="btn btn-primary">
               Take the Survey
             </a>
+            <div>
+            <a href="https://app.sessions.us/book/george-karani/impact-meetings" class="btn btn-primary">
+                Schedule a demo
+              </a>
+            </div>
           </div>
         </section>
       </div>
