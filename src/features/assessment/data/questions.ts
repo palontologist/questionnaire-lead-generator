@@ -60,8 +60,20 @@ export const backgroundQuestions = [
 ] as Question[];
 
 export const assessmentQuestions = [
+
   {
-    question: "How confident are you that your company is managing it's environmental impact?",
+  question: "What does your company do? What are it's main products, activities and services?",
+    section: "assessment",
+    category: "environmental",
+  },
+  {
+    question: "What is the businesses mision and vision? What are your long-term goals?",
+    section: "assessment",
+    category: "environmental",
+  },
+  
+  {
+    question: "What industry and sector is your business in?",
     section: "assessment",
     category: "environmental",
   },

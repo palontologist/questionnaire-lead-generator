@@ -4,6 +4,7 @@ import { cn } from "../../../util/cn";
 import { assessmentQuestions, Categories } from "../data/questions";
 import { startCase } from "lodash";
 
+
 function WarningIcon({ className }: { className: string }) {
   return (
     <svg
@@ -59,10 +60,41 @@ function Category({
   );
 }
 
+async function fetchApiData() {
+  const response = await fetch('https://v2-api.respell.ai/spells/start', {
+    method: 'POST',
+    headers: {
+      'x-api-key': 'clxf6ath80doehxs0zel76oji',
+      accept: 'application/json',
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      spellId: 'clyydjr6v036vm9cmxmuachzr',
+      wait: true,
+      inputs: {},
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+
+  return response.json();
+}
+
 export const registerResultsPage = pageFactory(
   "/assessment/results",
   async (c) => {
     const responses = getResponses(c);
+
+    // Fetch API data
+    let apiData;
+    try {
+      apiData = await fetchApiData();
+    } catch (error) {
+      console.error("Failed to fetch API data:", error);
+      apiData = null;
+    }
 
     // filter out the responses.questions by type
     const categoryScores: Record<Categories, number> = assessmentQuestions
@@ -93,6 +125,13 @@ export const registerResultsPage = pageFactory(
           />
           <Category category="social" score={categoryScores["social"]} />
           <Category category="governance" score={categoryScores["governance"]} />
+
+          {apiData && (
+            <div class="mt-8">
+              <h2 class="text-2xl font-bold">API Data</h2>
+              <pre>{JSON.stringify(apiData, null, 2)}</pre>
+            </div>
+          )}
         </div>
       </div>
     );
